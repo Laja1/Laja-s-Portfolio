@@ -4,6 +4,7 @@ import "./Header.css";
 import rec from "../assets/rec.svg";
 import rec1 from "../assets/rec1.svg";
 import rec2 from "../assets/rec2.svg";
+import { Link } from "react-router-dom";
 import link from "../assets/link.svg";
 import work from "../assets/work.jpg";
 import work2 from "../assets/work2.svg";
@@ -103,7 +104,11 @@ function Projects() {
                   }}
                 >
                   <img src={link} />
-                  <a style={{ fontSize: 16, fontFamily: "Poppins" }}>Preview</a>
+                  <Link to="/Project">
+                    <a style={{ fontSize: 16, fontFamily: "Poppins" }}>
+                      Preview
+                    </a>
+                  </Link>
                 </div>
                 <div
                   style={{
@@ -114,7 +119,10 @@ function Projects() {
                   }}
                 >
                   <img src={git} style={{ width: 20, height: 30 }} />
-                  <a style={{ fontSize: 16, fontFamily: "Poppins" }}>
+                  <a
+                    href="https://github.com/Laja1/Food-App-Design"
+                    style={{ fontSize: 16, fontFamily: "Poppins" }}
+                  >
                     View Code
                   </a>
                 </div>
@@ -190,7 +198,11 @@ function Projects() {
                   }}
                 >
                   <img src={link} />
-                  <a style={{ fontSize: 16, fontFamily: "Poppins" }}>Preview</a>
+                  <Link to="/Project">
+                    <a style={{ fontSize: 16, fontFamily: "Poppins" }}>
+                      Preview
+                    </a>
+                  </Link>
                 </div>
                 <div
                   style={{
@@ -201,7 +213,10 @@ function Projects() {
                   }}
                 >
                   <img src={git} style={{ width: 20, height: 30 }} />
-                  <a style={{ fontSize: 16, fontFamily: "Poppins" }}>
+                  <a
+                    href="https://github.com/Laja1/Spotify-App-Design"
+                    style={{ fontSize: 16, fontFamily: "Poppins" }}
+                  >
                     View Code
                   </a>
                 </div>
@@ -278,7 +293,11 @@ function Projects() {
                   }}
                 >
                   <img src={link} />
-                  <a style={{ fontSize: 16, fontFamily: "Poppins" }}>Preview</a>
+                  <Link to="/Project">
+                    <a style={{ fontSize: 16, fontFamily: "Poppins" }}>
+                      Preview
+                    </a>
+                  </Link>
                 </div>
                 <div
                   style={{
@@ -289,7 +308,10 @@ function Projects() {
                   }}
                 >
                   <img src={git} style={{ width: 20, height: 30 }} />
-                  <a style={{ fontSize: 16, fontFamily: "Poppins" }}>
+                  <a
+                    href="https://github.com/Laja1/fashion"
+                    style={{ fontSize: 16, fontFamily: "Poppins" }}
+                  >
                     View Code
                   </a>
                 </div>

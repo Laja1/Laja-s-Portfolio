@@ -58,6 +58,7 @@ export default function Spotify() {
           alignItems: "center",
           alignSelf: "center",
           display: "flex",
+          paddingBottom: 20,
         }}
       >
         <div
