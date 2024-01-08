@@ -1,0 +1,15 @@
+.headfont{
+                font-size: 20px;
+                font-family: "DM Sans";
+                  font-weight: "normal",
+    
+}
+
+.card{
+  width: 373px;
+  height: 567px;
+  display: flex;
+  border-radius: 20px;
+  shadow: opacity 0.25rem;
+  shadow: offset 0.25rem
+}
