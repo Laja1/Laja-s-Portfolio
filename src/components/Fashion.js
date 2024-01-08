@@ -37,6 +37,26 @@ const customStyles = {
 };
 
 export default function Fashion() {
+  const imageUrls = [
+    fash1,
+    fash2,
+    fash3,
+    fash4,
+    fash5,
+    fash6,
+    fash7,
+    fash8,
+    fash9,
+    fash10,
+    fash11,
+    fash12,
+    fash13,
+    fash14,
+    fash15,
+    fash16,
+    fash17,
+    fash18,
+  ];
   let subtitle;
   const [modalIsOpen, setIsOpen] = React.useState(false);
   const [modalIsOpen2, setIsOpen2] = React.useState(false);
@@ -176,61 +196,31 @@ export default function Fashion() {
         style={customStyles}
         contentLabel="Example Modal"
       >
-        <div
-          style={{
-            flexDirection: "row",
-            justifyContent: "center",
-            paddingBottom: 20,
-            display: "flex",
-            gap: 20,
-          }}
-        >
-          <img style={{ height: 300 }} src={fash1} />
-
-          <img style={{ height: 300 }} src={fash2} />
-          <img style={{ height: 300 }} src={fash3} />
-          <img style={{ height: 300 }} src={fash4} />
-          <img style={{ height: 300 }} src={fash5} />
-          <img style={{ height: 300 }} src={fash6} />
-          <img style={{ height: 300 }} src={fash7} />
-          <img style={{ height: 300 }} src={fash8} />
-          <img style={{ height: 300 }} src={fash9} />
+        <div style={{ overflowX: "auto", whiteSpace: "nowrap" }}>
+          <div style={{ display: "flex" }}>
+            {imageUrls.map((imageUrl, index) => (
+              <img
+                key={index}
+                src={imageUrl}
+                alt={`Image ${index + 1}`}
+                style={{
+                  height: 450,
+                  maxWidth: "100%",
+                  padding: 16,
+                  margin: 8,
+                  borderRadius: 8,
+                  display: "inline-block",
+                }}
+              />
+            ))}
+          </div>
         </div>
-        <div
-          style={{
-            flexDirection: "row",
-            justifyContent: "center",
-            paddingBottom: 20,
-            display: "flex",
-            gap: 20,
-          }}
-        >
-          <img style={{ height: 300 }} src={fash10} />
-          <img style={{ height: 300 }} src={fash11} />
-
-          <img style={{ height: 300 }} src={fash12} />
-          <img style={{ height: 300 }} src={fash13} />
-          <img style={{ height: 300 }} src={fash14} />
-          <img style={{ height: 300 }} src={fash15} />
-          <img style={{ height: 300 }} src={fash16} />
-          <img style={{ height: 300 }} src={fash17} />
-          <img style={{ height: 300 }} src={fash18} />
-        </div>
-        <div
-          style={{
-            flexDirection: "row",
-            justifyContent: "center",
-            paddingBottom: 20,
-            display: "flex",
-            gap: 20,
-          }}
-        ></div>
         <div
           style={{
             paddingHorizontal: 20,
             justifyContent: "center",
-            paddingTop: 10,
             display: "flex",
+            paddingTop: 10,
           }}
         >
           <Button variant="secondary" onClick={closeModal}>

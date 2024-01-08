@@ -20,7 +20,7 @@ const customStyles = {
     transform: "translate(-50%, -50%)",
   },
 };
-
+const imageUrls = [food1, food2, food3, food4];
 export default function Food() {
   let subtitle;
   const [modalIsOpen, setIsOpen] = React.useState(false);
@@ -47,6 +47,7 @@ export default function Food() {
           alignSelf: "center",
           display: "flex",
           paddingBottom: 20,
+          paddingTop: 20,
         }}
       >
         <div
@@ -87,17 +88,24 @@ export default function Food() {
         style={customStyles}
         contentLabel="Example Modal"
       >
-        <div
-          style={{
-            flexDirection: "row",
-            display: "flex",
-            gap: 20,
-          }}
-        >
-          <img style={{ height: 560 }} src={food1} />
-          <img style={{ height: 560 }} src={food2} />
-          <img style={{ height: 560 }} src={food3} />
-          <img style={{ height: 560 }} src={food4} />
+        <div style={{ overflowX: "auto", whiteSpace: "nowrap" }}>
+          <div style={{ display: "flex" }}>
+            {imageUrls.map((imageUrl, index) => (
+              <img
+                key={index}
+                src={imageUrl}
+                alt={`Image ${index + 1}`}
+                style={{
+                  height: 450,
+                  maxWidth: "100%",
+                  padding: 16,
+                  margin: 8,
+                  borderRadius: 8,
+                  display: "inline-block",
+                }}
+              />
+            ))}
+          </div>
         </div>
         <div
           style={{

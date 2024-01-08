@@ -30,6 +30,7 @@ const customStyles = {
 };
 
 export default function Spotify() {
+  const imageUrls = [no1, no2, no3, no4, no5, no6, no7, no8, no9, no10, no11];
   let subtitle;
   const [modalIsOpen, setIsOpen] = React.useState(false);
 
@@ -99,42 +100,31 @@ export default function Spotify() {
         style={customStyles}
         contentLabel="Example Modal"
       >
-        <div
-          style={{
-            flexDirection: "row",
-            justifyContent: "center",
-            paddingBottom: 20,
-            display: "flex",
-            gap: 20,
-          }}
-        >
-          <img style={{ height: 340 }} src={no1} />
-          <img style={{ height: 340 }} src={no2} />
-          <img style={{ height: 340 }} src={no3} />
-          <img style={{ height: 340 }} src={no4} />
-          <img style={{ height: 340 }} src={no5} />
+        <div style={{ overflowX: "auto", whiteSpace: "nowrap" }}>
+          <div style={{ display: "flex" }}>
+            {imageUrls.map((imageUrl, index) => (
+              <img
+                key={index}
+                src={imageUrl}
+                alt={`Image ${index + 1}`}
+                style={{
+                  height: 450,
+                  maxWidth: "100%",
+                  padding: 16,
+                  margin: 8,
+                  borderRadius: 8,
+                  display: "inline-block",
+                }}
+              />
+            ))}
+          </div>
         </div>
-        <div
-          style={{
-            flexDirection: "row",
-            display: "flex",
-            gap: 20,
-          }}
-        >
-          <img style={{ height: 340 }} src={no6} />
-          <img style={{ height: 340 }} src={no7} />
-          <img style={{ height: 340 }} src={no8} />
-          <img style={{ height: 340 }} src={no9} />
-          <img style={{ height: 340 }} src={no10} />
-          <img style={{ height: 340 }} src={no11} />
-        </div>
-
         <div
           style={{
             paddingHorizontal: 20,
             justifyContent: "center",
-            paddingTop: 10,
             display: "flex",
+            paddingTop: 10,
           }}
         >
           <Button variant="secondary" onClick={closeModal}>
