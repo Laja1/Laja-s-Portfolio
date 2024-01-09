@@ -45,9 +45,11 @@ function Header() {
             </Link>
           </div>
           <div>
-            <h1 style={{ color: "#666666" }} className="headfont">
-              Contact
-            </h1>
+            <Link to="/Contact" className="nav-link">
+              <h1 style={{ color: "#666666" }} className="headfont">
+                Contact
+              </h1>
+            </Link>
           </div>
         </div>
       </Container>

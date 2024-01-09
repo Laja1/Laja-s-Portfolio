@@ -75,16 +75,24 @@ function Projects() {
                 style={{
                   fontSize: 18,
                   fontFamily: "Poppins",
-                  justifyContent: "center",
+
+                  display: "flex",
                 }}
               >
-                This is sample project description random things are here in
-                description This is sample project lorem ipsum generator for
-                dummy content
+                This is a Food ordering app design project that was designed
+                using
+                <br /> react-native(expo).
               </h3>
               <br />
-              <h3 style={{ fontSize: 16, fontFamily: "Poppins" }}>
-                Tech stack : HTML , JavaScript, SASS, React
+              <h3
+                style={{
+                  fontSize: 16,
+                  justifyContent: "center",
+                  fontFamily: "Poppins",
+                  display: "flex",
+                }}
+              >
+                Tech stack : React-Native(expo)
               </h3>
               <br />
               <div
@@ -172,13 +180,20 @@ function Projects() {
                   justifyContent: "center",
                 }}
               >
-                This is sample project description random things are here in
-                description This is sample project lorem ipsum generator for
-                dummy content
+                This is a Spotify music app design project that was designed
+                using <br />
+                react-native(expo).
               </h3>
               <br />
-              <h3 style={{ fontSize: 16, fontFamily: "Poppins" }}>
-                Tech stack : HTML , JavaScript, SASS, React
+              <h3
+                style={{
+                  fontSize: 16,
+                  justifyContent: "center",
+                  fontFamily: "Poppins",
+                  display: "flex",
+                }}
+              >
+                Tech stack : React-Native(expo)
               </h3>
               <br />
               <div
@@ -267,13 +282,20 @@ function Projects() {
                   justifyContent: "center",
                 }}
               >
-                This is sample project description random things are here in
-                description This is sample project lorem ipsum generator for
-                dummy content
+                This is a Spotify music app design project that was designed
+                using <br />
+                react-native(expo).
               </h3>
               <br />
-              <h3 style={{ fontSize: 16, fontFamily: "Poppins" }}>
-                Tech stack : HTML , JavaScript, SASS, React
+              <h3
+                style={{
+                  fontSize: 16,
+                  justifyContent: "center",
+                  fontFamily: "Poppins",
+                  display: "flex",
+                }}
+              >
+                Tech stack : React-Native(expo)
               </h3>
               <br />
               <div

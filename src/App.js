@@ -2,6 +2,7 @@ import React from "react";
 import Body from "./components/Body";
 import About from "./components/About";
 import Home from "./components/Home";
+import Contact from "./components/Contact";
 import { Container, Row } from "react-bootstrap";
 import Header from "./components/Header";
 import Projects from "./components/Projects";
@@ -17,6 +18,7 @@ function App() {
         <Routes>
           <Route path="/" exact element={<Home />} />
           <Route path="/About" element={<About />} />
+          <Route path="/Contact" element={<Contact />} />
           <Route path="/Project" element={<Project />} />
         </Routes>
       </div>

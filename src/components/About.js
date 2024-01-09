@@ -26,10 +26,15 @@ function About() {
           About Me
         </h1>
         <h1 style={{ fontFamily: "Poppins", fontSize: 18, color: "#666666" }}>
-          The Generator App is an online tool that helps you to export
-          ready-made templates ready to work as your future website. It helps
-          you to combine slides, panels and other components and export it as a
-          set of static files: HTML/CSS/JS.
+          Hello! I'm a Frontend Developer with three years of expertise in HTML,
+          CSS, JavaScript, React, and React-Native. Specializing in crafting
+          captivating user interfaces for web and mobile applications, I focus
+          on creating both functional and visually stunning experiences.
+          <br />
+          <br />
+          My passion lies in transforming ideas into compelling digital
+          landscapes, always staying up-to-date with the latest industry trends.
+          Let's collaborate to bring your digital vision to life seamlessly.
         </h1>
         <hr style={{ padding: 20 }} />
         <h1
