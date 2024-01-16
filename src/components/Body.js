@@ -15,7 +15,6 @@ function Body() {
         style={{
           justifyContent: "center",
           display: "flex",
-
           paddingTop: 100,
         }}
       >
@@ -43,7 +42,7 @@ function Body() {
             style={{
               flexDirection: "row",
               display: "flex",
-              gap: 150,
+              gap: 100,
               padding: 30,
             }}
           >

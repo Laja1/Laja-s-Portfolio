@@ -10,7 +10,7 @@ function About() {
       <Container
         style={{
           display: "flex",
-          width: 700,
+          width: 400,
           paddingTop: 20,
           flexDirection: "column",
         }}
@@ -25,7 +25,14 @@ function About() {
         >
           About Me
         </h1>
-        <h1 style={{ fontFamily: "Poppins", fontSize: 18, color: "#666666" }}>
+        <h1
+          style={{
+            fontFamily: "Poppins",
+
+            color: "#666666",
+          }}
+          className="text-xl w-[550px]"
+        >
           Hello! I'm a Frontend Developer with three years of expertise in HTML,
           CSS, JavaScript, React, and React-Native. Specializing in crafting
           captivating user interfaces for web and mobile applications, I focus
@@ -51,6 +58,7 @@ function About() {
           style={{
             flexDirection: "row",
             display: "flex",
+
             justifyContent: "space-between",
           }}
         >

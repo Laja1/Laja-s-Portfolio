@@ -7,7 +7,7 @@ import rec2 from "../assets/rec2.svg";
 import { Link } from "react-router-dom";
 import link from "../assets/link.svg";
 import work from "../assets/work.jpg";
-import work2 from "../assets/work2.svg";
+
 import work3 from "../assets/work2.jpg";
 import { motion } from "framer-motion";
 import work4 from "../assets/work3.jpg";
@@ -23,6 +23,7 @@ function Projects() {
         style={{
           justifyContent: "center",
           display: "flex",
+
           padding: 25,
           alignItems: "center",
           flexDirection: "column",
@@ -39,7 +40,7 @@ function Projects() {
         </h3>
         <Row style={{ gap: 50, padding: 20 }}>
           <div
-            className="card"
+            className="card md:justify-center md:items-center md:flex px-40"
             style={{
               width: 373,
               height: 567,
@@ -51,7 +52,10 @@ function Projects() {
             <motion.div
               initial={{ scale: [1] }}
               whileHover={{ scale: [1.2] }}
-              style={{ alignSelf: "center", justifyContent: "center" }}
+              style={{
+                alignSelf: "center",
+                justifyContent: "center",
+              }}
             >
               <img
                 src={work}
