@@ -13,7 +13,6 @@ function Header() {
   return (
     <div className="container">
       <Container>
-        {" "}
         <div
           style={{
             flexDirection: "row",
@@ -33,7 +32,6 @@ function Header() {
               </h1>
             </Link>
             <Link to="/Project" className="nav-link">
-              {" "}
               <h1 style={{ color: "#666666" }} className="headfont">
                 Project
               </h1>

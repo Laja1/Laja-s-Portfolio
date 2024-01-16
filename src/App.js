@@ -6,6 +6,7 @@ import Contact from "./components/Contact";
 import { Container, Row } from "react-bootstrap";
 import Header from "./components/Header";
 import Projects from "./components/Projects";
+
 import Project from "./components/Project";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
