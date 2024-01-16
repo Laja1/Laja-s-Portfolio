@@ -16,7 +16,7 @@ function Contact() {
           style={{
             justifyContent: "center",
             display: "flex",
-            width: 900,
+            width: 400,
 
             height: 500,
             flexDirection: "row",

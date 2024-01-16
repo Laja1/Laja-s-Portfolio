@@ -28,10 +28,10 @@ function About() {
         <h1
           style={{
             fontFamily: "Poppins",
-
+            flexWrap: "wrap",
             color: "#666666",
           }}
-          className="text-xl w-[550px]"
+          className="text-[16px] w-[400px]"
         >
           Hello! I'm a Frontend Developer with three years of expertise in HTML,
           CSS, JavaScript, React, and React-Native. Specializing in crafting

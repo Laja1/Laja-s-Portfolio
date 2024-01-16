@@ -66,34 +66,46 @@ function Header() {
             <div
               className={
                 !nav
-                  ? "bg-[#ffffff] fixed top-10 w-[30%] p-10 left-0 ease-in-out duration-500 h-full"
+                  ? "bg-[#8A65EC] text-white fixed top-0 w-[45%] p-10 left-0 ease-in-out duration-500 h-full"
                   : "fixed left-[-100%]"
               }
             >
-              <h1 style={{ color: "#666666" }} className="headfont ">
+              <h1 style={{ color: "#666666" }} className="headfont text-white ">
                 Portfolio
               </h1>
               <NavLink to="/" className="nav-link" activeStyle={active}>
-                <h1 style={{ color: "#666666" }} className="headfont p-4">
+                <h1
+                  style={{ color: "#666666" }}
+                  className="headfont p-4 text-white "
+                >
                   Home
                 </h1>
               </NavLink>
               <hr />
               <Link to="/Project" className="nav-link" activeStyle={active}>
-                <h1 style={{ color: "#666666" }} className="headfont p-4">
+                <h1
+                  style={{ color: "#666666" }}
+                  className="headfont p-4 text-white "
+                >
                   Project
                 </h1>
               </Link>
               <hr />
               <Link to="/About" className="nav-link" activeStyle={active}>
-                <h1 style={{ color: "#666666" }} className="headfont p-4">
+                <h1
+                  style={{ color: "#666666" }}
+                  className="headfont p-4 text-white "
+                >
                   About
                 </h1>
               </Link>
               <hr />
               <div>
                 <Link to="/Contact" className="nav-link" activeStyle={active}>
-                  <h1 style={{ color: "#666666" }} className="headfont">
+                  <h1
+                    style={{ color: "#666666" }}
+                    className="headfont text-white "
+                  >
                     Contact
                   </h1>
                 </Link>
